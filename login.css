@@ -1,0 +1,162 @@
+:root {
+    --linear-gradient:linear-gradient(to bottom, #e75590, #00c2cb);
+    --button-linear: linear-gradient(120deg, #e75590, #00c2cb,#e75590);
+
+    --linear-background1: linear-gradient(to bottom, #f1f4f9, #dff1ff);
+    --background2: #e75590;
+    --background3: #00c2cb;
+    --background4: #e75590;
+    --border: 1px solid rgba(255,255,255,0.5);
+    --border-right: 1px solid rgba(255,255,255,0.2);
+    --border-bottom: 1px solid rgba(255,255,255,0.2); 
+    --background-square: rgba(255,255,255,0.1);
+    --background-square2: rgba(255,255,255,0.2);
+    --box-shadow: 0 25px 45px rgba(0,0,0,0.1);
+    --box-shadow2: 0 5px 15px rgba(0,0,0,0.05);
+    --color: #fff;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto' , sans-serif;
+}
+
+#background {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: var(--linear-gradient);
+}
+
+#login_container {
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: var(--box-shadow);
+    border: var(--border);
+    border-right: var(--border-right);
+    border-bottom: var(--border-bottom);
+    width: 300px;
+    min-height:400px;
+    background-color: var(--background-square);
+}
+
+.login_tittle {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+#login_container input {
+    width: 100%;
+    padding: 15px;
+    margin-top: 15px;
+    background: none;
+    border: none;
+    color: #fff;
+    outline: 0;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    justify-content:left;
+    align-items:left;
+    flex-direction: column;
+}
+
+::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.623);
+    font-size: 16px;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color: rgb(255, 255, 255) !important;
+  -webkit-box-shadow: 0 0 0px 1000px rgba(0, 0, 0, 0) inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+
+#login_container .botao {
+    width: 100px;
+    padding: 8px;
+    background: #fff;
+    color: #666;
+    display: inline-block;
+    border-radius: 20px;
+    margin-top:30px;
+    margin-bottom: 20px;
+}
+
+#login_container .botao:hover {
+    color: rgb(34, 34, 34);
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.login_line {
+    width: 100%;
+    border: 1px solid #fff;
+}
+
+.login_link {
+    margin-top: 45px;
+    font: 14px;
+    color: #fff;
+}
+
+.login_link a {
+    font: 14px;
+    color: rgba(255, 255, 255, 0.692);
+    text-decoration: none;
+}
+
+.login_link a:hover {
+    color: #fff;
+}
+
+div#msg-sucesso{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #fff;
+    background-color: rgba(0, 128, 0, 0.1);
+    border: var(--border);
+    border-radius: 15px;
+    width: 300px;
+    height: 50px;
+}
+
+div.msg-erro{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #fff;
+    background-color: rgba(255, 0, 0, 0.452);
+    border: 1px solid rgba(255, 255, 255, 0.678);
+    border-radius: 15px;
+    width: 300px;
+    height: 50px;
+}
