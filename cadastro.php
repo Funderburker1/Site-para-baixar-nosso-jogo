@@ -10,7 +10,7 @@ $u = new Usuario;
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="cadastro.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <title>Tela de Cadastro</title>
@@ -31,7 +31,11 @@ $u = new Usuario;
                 <span class="login_line"></span>
                 <input type="password" name="confSenha" placeholder="Confirmar senha" maxlength="15">
                 <span class="login_line"></span>
-                <input class="botao" type="submit" value="Cadastrar">
+                <div class="botoes">
+                    <input class="botao_cad" type="submit" value="Cadastrar">
+                    <a class="botao_voltar" href="index.php">Voltar</a>
+                </div>
+
             </form>
         </div>
 

@@ -93,20 +93,46 @@ select:-webkit-autofill:focus {
 }
 
 
-#login_container .botao {
+#login_container .botoes {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin: 10px;
+}
+
+#login_container .botao_cad {
     width: 100px;
     padding: 8px;
     background: #fff;
     color: #666;
     display: inline-block;
     border-radius: 20px;
-    margin-top:30px;
-    margin-bottom: 20px;
+    margin: 10px;
+    font-size: 14px;
+}
+
+#login_container .botao_voltar {
+    text-align: center;
+    font-size: 14px;
+    width: 100px;
+    padding: 8px;
+    background: #fff;
+    color: #666;
+    display: inline-block;
+    border-radius: 20px;
+    margin: 10px;
+    text-decoration: none;
+
 }
 
 
+#login_container .botao_cad:hover {
+    color: rgb(34, 34, 34);
+    cursor: pointer;
+    font-weight: 600;
+}
 
-#login_container .botao:hover {
+#login_container .botao_voltar:hover {
     color: rgb(34, 34, 34);
     cursor: pointer;
     font-weight: 600;
