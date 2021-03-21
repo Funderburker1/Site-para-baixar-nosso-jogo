@@ -44,21 +44,21 @@ $u = new Usuario;
                         header(("location: AreaPrivada.php"));
                     } else {
         ?>
-                        <div id="msg-erro">
+                        <div id="login-erro">
                             E-mail e/ou senha estão incorretos!
                         </div>
                     <?php
                     }
                 } else {
                     ?>
-                    <div id="msg-erro">
+                    <div id="login-erro">
                         <?php echo "Erro: " . $u->msgErro; ?>
                     </div>
                 <?php
                 }
             } else {
                 ?>
-                <div id="msg-erro">
+                <div id="login-erro">
                     Preencha todos os campos!
                 </div>
         <?php
