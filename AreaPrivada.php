@@ -45,7 +45,7 @@ if (!isset($_SESSION['id_usuario'])) {
                 <div>
                     <h1>Nome do Jogo</h1>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis sequi illum sint in nam consectetur fuga adipisci voluptatibus accusamus eligendi quae ducimus quis.</p>
-                    <button id="dowload-jogo">Baixar</button>
+                    <input id="dowload-jogo" type="button" value="Baixar">
                 </div>
 
             </div>
@@ -71,7 +71,9 @@ if (!isset($_SESSION['id_usuario'])) {
         <section id="cont-texto">
             <div class="caixa-texto">
                 <h1>Sobre</h1>
-                <p class="texto-jogo">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor veniam quisquam porro ad et, architecto beatae? Aut, excepturi! Nesciunt praesentium ea blanditiis debitis necessitatibus possimus repellendus tempore ad enim optio!</p>
+                <p class="texto-jogo">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor veniam quisquam porro ad et, architecto beatae? Aut, excepturi! Nesciunt praesentium ea blanditiis debitis necessitatibus possimus repellendus tempore ad enim optio!
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor veniam quisquam porro ad et, architecto beatae? Aut, excepturi! Nesciunt praesentium ea blanditiis debitis necessitatibus possimus repellendus tempore ad enim optio!
+                </p>
             </div>
         </section>
 

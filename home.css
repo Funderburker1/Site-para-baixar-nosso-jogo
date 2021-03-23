@@ -167,7 +167,7 @@ header {
 }
 
 /*botão*/
-.banner button {
+.banner #dowload-jogo {
   font-family: var(--font-action);
   color: #fff;
   text-transform: uppercase;
@@ -182,10 +182,10 @@ header {
   animation: moveBanner .8s 0.8s forwards;
 }
 
-.banner button:hover {
-  font-size: 15px;
-  color: #ffffff;
-  box-shadow: 0.3rem 0.3rem 0.3rem rgba(0,0,0, .5);
+.banner #dowload-jogo:hover {
+  background-color: var(--background-square);
+  box-shadow: var(--box-shadow);
+  backdrop-filter: blur( 5px );
  
 }
 
