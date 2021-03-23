@@ -148,3 +148,37 @@ div#login-erro {
     width: 300px;
     height: 50px;
 }
+
+/*
+<header id="head">
+        <img src="./img/oap2.png" alt="">
+        <nav class="navegation">
+            <ul>
+
+                <li><a class="sair" href="Sair.php">Sair</a></li>
+
+            </ul>
+        </nav>
+*/
+
+/*
+
+ <main id="conteudo">
+        <section class="background1">
+            <div class="jogo-container">
+                <h1>NOME DO JOGO</h1>
+                <h4>Baixar</h4>
+            </div>
+        </section>
+        <section class="textos">
+            <div class="texto1">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sequi dignissimos magni suscipit officiis repudiandae illum est ducimus tenetur ipsum saepe, ex cupiditate dicta consequatur facere quos ea? Reprehenderit, minus?</p>
+            </div>
+            <div class="texto2">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad beatae officia exercitationem natus dolorem commodi sequi tempore aperiam. Adipisci perspiciatis cumque non ab totam at voluptatibus? Voluptatibus fugit neque tempore.</p>
+            </div>
+        </section>
+    </main>
+
+
+*/

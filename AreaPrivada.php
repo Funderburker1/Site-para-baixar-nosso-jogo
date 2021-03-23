@@ -5,51 +5,87 @@ if (!isset($_SESSION['id_usuario'])) {
     exit;
 }
 
-
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="./home.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
     <title>Pagina do Jogo</title>
 </head>
 
 <body>
-    <header id="head">
-        <img src="./img/oap2.png" alt="">
-        <nav class="navegation">
-            <ul>
-                <li>Home</li>
-                <li>Dowload</li>
-                <li>Trailer</li>
-                <li><a class="sair" href="Sair.php">Sair</a></li>
+    <div class="container">
 
-            </ul>
-        </nav>
+        <div class="hamburguer">
+            <div class="line" id="line1"></div>
+            <div class="line" id="line2"></div>
+            <div class="line" id="line3"></div>
+            <span>Fechar</span>
+        </div>
 
-    </header>
-    <main id="conteudo">
-        <section class="background1">
-            <div class="jogo-container">
-                <h1>NOME DO JOGO</h1>
-                <h4>Baixar</h4>
+        <header id="home">
+            <div class="img-wrapper">
+
+                <img src="./img/planet-illustration.webp" alt="backgraund">
+
+            </div>
+
+            <div class="banner">
+                <div class="capa-jogo">
+                    <img class="capa" src="./img/darksidersii.png" alt="">
+                </div>
+                <div>
+                    <h1>Nome do Jogo</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis sequi illum sint in nam consectetur fuga adipisci voluptatibus accusamus eligendi quae ducimus quis.</p>
+                    <button id="dowload-jogo">Baixar</button>
+                </div>
+
+            </div>
+        </header>
+
+        <aside class="sidebar">
+            <nav>
+                <ul class="menu">
+                    <li class="menu-item"><a href="#cont-texto" class="menu-link">Sobre</a></li>
+                    <li class="menu-item"><a href="#cont-trailer" class="menu-link">Trailer</a></li>
+                    <li class="menu-item"><a href="#" class="menu-link">Dowload</a></li>
+                    <li class="menu-item"><a href="#score" class="menu-link">Score</a></li>
+                    <li class="menu-item"><a href="Sair.php" class="menu-link">Sair</a></li>
+                </ul>
+            </nav>
+            <div class="social-media">
+                <a href="#"><i class="lab la-facebook-f"></i></a>
+                <a href=""><i class="lab la-github-alt"></i></a>
+                <a href=""><i class="lab la-twitter"></i></a>
+            </div>
+        </aside>
+
+        <section id="cont-texto">
+            <div class="caixa-texto">
+                <p class="texto-jogo">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor veniam quisquam porro ad et, architecto beatae? Aut, excepturi! Nesciunt praesentium ea blanditiis debitis necessitatibus possimus repellendus tempore ad enim optio!</p>
             </div>
         </section>
-        <section class="textos">
-            <div class="texto1">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sequi dignissimos magni suscipit officiis repudiandae illum est ducimus tenetur ipsum saepe, ex cupiditate dicta consequatur facere quos ea? Reprehenderit, minus?</p>
-            </div>
-            <div class="texto2">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad beatae officia exercitationem natus dolorem commodi sequi tempore aperiam. Adipisci perspiciatis cumque non ab totam at voluptatibus? Voluptatibus fugit neque tempore.</p>
+
+        <section id="cont-trailer">
+            <div class="trailer-jogo">
+                <h1 class="t-trailer">Assista ao trailer do nosso jogo</h1>
+                <iframe class="video-container" src="https://youtube.com/embed/u548qyxRTBU" allowfullscreen></iframe>
+        </section>
+
+        <section id="score">
+            <div class="seu-score">
+                <h1>Seu Score é de : 2000</h1>
             </div>
         </section>
-    </main>
+    </div>
 </body>
-
+<script src="menu.js"></script>
 
 </html>
