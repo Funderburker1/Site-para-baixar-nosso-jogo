@@ -39,15 +39,16 @@
     flex-direction: column;
 
     margin-top: 20px;
-    padding: 20px;
+    padding: 35px;
     border-radius: 15px;
     box-shadow: var(--box-shadow);
     border: var(--border);
     border-right: var(--border-right);
     border-bottom: var(--border-bottom);
-    width: 300px;
-    min-height:400px;
+    width: 400px;
+    min-height: 400px;
     background-color: var(--background-square);
+   
 }
 
 .login_tittle {
@@ -148,4 +149,112 @@ div#login-erro {
     width: 300px;
     height: 50px;
 }
+
+
+
+
+
+
+
+
+
+
+section .color {
+    position: absolute;
+    filter: blur(150px)
+}
+
+section .color:nth-child(1) {
+    top: -350px;
+    width: 600px;
+    height: 600px;
+    background: var(--background2)
+}
+
+section .color:nth-child(2) {
+    bottom: -150px;
+    left: 100px;
+    width: 500px;
+    height: 500px;
+    background:var(--background3)
+}
+
+section .color:nth-child(3) {
+    bottom: 50px;
+    left: 100px;
+    width: 300px;
+    height: 300px;
+    background: var(--background4)
+}
+
+.box {
+    position: relative;
+}
+
+.box .square {
+    position: absolute;
+    backdrop-filter: blur(5px);
+    box-shadow: var(--box-shadow);
+    border: var(--border);
+    border-right: var(--border-right);
+    border-bottom: var(--border-bottom);
+    background: var(--background-square);
+    border-radius: 10px;
+    
+    animation: animate 11s linear infinite;
+    animation-delay: calc(-1s * var(--i));
+}
+
+@keyframes animate {
+
+    0%, 100%
+    {
+        transform: translateY(-20px);
+    }
+
+    50%
+    {
+        transform: translateY(40px);
+    }
+}
+
+/*---------------------------------------QUADRADO--------------------------------------*/
+.box .square:nth-child(1){
+    top: -50px;
+    right: -60px;
+    width: 100px;
+    height: 100px;
+}
+
+.box .square:nth-child(2){
+    top: 150px;
+    left: -100px;
+    width: 120px;
+    height: 120px;
+    z-index: 2;
+}
+
+.box .square:nth-child(3){
+    bottom: 50px;
+    right: -60px;
+    width: 80px;
+    height: 80px;
+    z-index: 2;
+}
+
+.box .square:nth-child(4){
+    bottom: -50px;
+    left: 100px;
+    width: 50px;
+    height: 50px;
+}
+
+.box .square:nth-child(5){
+    top: -80px;
+    left: 140px;
+    width: 60px;
+    height: 60px;
+
+}
+
 
