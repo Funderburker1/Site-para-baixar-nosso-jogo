@@ -1,11 +1,11 @@
 :root {
-    --linear-gradient:linear-gradient(to bottom, #e75590, #00c2cb);
-    --button-linear: linear-gradient(120deg, #e75590, #00c2cb,#e75590);
+    --linear-gradient:linear-gradient(to bottom, #231f35, #463e69);
+    --button-linear: linear-gradient(120deg, #231f35, #463e69,#231f35);
 
     --linear-background1: linear-gradient(to bottom, #f1f4f9, #dff1ff);
-    --background2: #e75590;
-    --background3: #00c2cb;
-    --background4: #e75590;
+    --background2: #231f35;
+    --background3: #463e69;
+    --background4: #231f35;
     --border: 1px solid rgba(255,255,255,0.5);
     --border-right: 1px solid rgba(255,255,255,0.2);
     --border-bottom: 1px solid rgba(255,255,255,0.2); 

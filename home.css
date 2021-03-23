@@ -1,11 +1,11 @@
 :root {
-    --linear-gradient:linear-gradient(to bottom, #e75590, #00c2cb);
-    --button-linear: linear-gradient(120deg, #e75590, #00c2cb,#e75590);
+  --linear-gradient:linear-gradient(to bottom, #231f35, #463e69);
+  --button-linear: linear-gradient(120deg, #231f35, #463e69,#231f35);
 
-    --linear-background1: linear-gradient(to bottom, #f1f4f9, #dff1ff);
-    --background2: #e75590;
-    --background3: #00c2cb;
-    --background4: #e75590;
+  --linear-background1: linear-gradient(to bottom, #f1f4f9, #dff1ff);
+  --background2: #231f35;
+  --background3: #463e69;
+  --background4: #231f35;
     --border: 1px solid rgba(255,255,255,0.5);
     --border-right: 1px solid rgba(255,255,255,0.2);
     --border-bottom: 1px solid rgba(255,255,255,0.2); 
@@ -221,7 +221,8 @@ header {
 
 .menu {
   position: absolute;
-  top: 40%;
+  
+  top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
 }
@@ -313,6 +314,7 @@ header {
   align-items: center;
   background-color: #231f35;
   height: 70vh;
+  
 }
 
 .caixa-texto {
@@ -328,6 +330,7 @@ header {
   border-radius: 20px;
   padding: 20px;
   color: #fff;
+  overflow: hidden;
 }
 
 .texto-jogo {
@@ -339,7 +342,8 @@ header {
 
 }
 .capa-jogo img {
-  width: 13rem;
+  margin-top: 1rem;
+  width: 12rem;
   float: right;
   animation: moveBanner 1.4s  0.4s forwards;
   opacity: 0;
@@ -359,7 +363,15 @@ header {
 }
 
 
+/*
 @media (max-width:980px) {
+  header {
+    width: 100%;
+    height: 50vh;
+    overflow: hidden;
+    position: relative;
+  }
+
   .banner {
     display: flex;
     position: absolute;
@@ -368,11 +380,54 @@ header {
     right: 30%;
   }
 
+  .banner p {
+    font-size: 1rem;
+  }
+
+  .banner h1 {
+    font-size: 2.5rem;
+  }
+
   .capa-jogo {
     width: 30rem;
     height: 32rem;
   }
 
+  .capa-jogo img {
+    width: 9rem;
+    margin-top: 2rem;
+  }
+
+  #cont-texto{
+    height: 40vh;
+  }
+  .caixa-texto {
+    width: 70%;
+    height: 30vh;
+  
+  }
+
+  #cont-trailer {
+   
+    height: 50vh
+  }
+
+  #score {
+    height: 25vh;
+  }
+
+  .sidebar {
+    height: 50vh;
+  }
+
+  .menu-link {
+    font-size: 1.7rem;
+  }
+
+  .menu {
+    margin-top: 2rem;
+  }
 
 }
   
+*/
