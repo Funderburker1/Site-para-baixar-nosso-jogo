@@ -227,14 +227,14 @@ header {
 }
 
 .menu-item{
-  margin-bottom: .5rem;
+  margin-bottom: 1rem;
   text-align: center;
   list-style: none;
 }
 
 .menu-link {
   font-family: var(--font-action);
-  font-size: 2rem;
+  font-size: 2.3rem;
   color: rgb(255, 255, 255);
   transition: color .8s;
   text-decoration: none;
@@ -250,6 +250,10 @@ header {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
+}
+
+.social-list i {
+  font-size: 1.5rem;
  
 }
 
@@ -287,8 +291,11 @@ header {
   flex-direction: column;
   width: 80%;
   height: 90%;
-  background-color: var(--background-square2);
+  background-color: var(--background-square);
   border: var(--border);
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 5px );
+  border-radius: 20px;
 }
 
 .t-trailer {
@@ -311,16 +318,20 @@ header {
 .caixa-texto {
   display: flex;
   flex-direction: column;
-  background-color: #fff;
+  background-color: var(--background-square);
+  border: var(--border);
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 5px );
   width: 50%;
   height: 50vh;
 
   border-radius: 20px;
   padding: 20px;
+  color: #fff;
 }
 
-.texto-jogo{
-  
+.texto-jogo {
+  color: #fff;
 }
 
 .capa-jogo {
@@ -340,6 +351,11 @@ header {
   align-items: center;
   background-color: #231f35;
   height: 50vh;
+}
+
+.seu-score {
+  font-size: 2rem;
+  color: #fff;
 }
 
 

@@ -15,6 +15,7 @@ if (!isset($_SESSION['id_usuario'])) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./home.css">
+    <link rel="stylesheet" href="footer.css">
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
     <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
     <title>Pagina do Jogo</title>
@@ -69,6 +70,7 @@ if (!isset($_SESSION['id_usuario'])) {
 
         <section id="cont-texto">
             <div class="caixa-texto">
+                <h1>Sobre</h1>
                 <p class="texto-jogo">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor veniam quisquam porro ad et, architecto beatae? Aut, excepturi! Nesciunt praesentium ea blanditiis debitis necessitatibus possimus repellendus tempore ad enim optio!</p>
             </div>
         </section>
@@ -84,6 +86,21 @@ if (!isset($_SESSION['id_usuario'])) {
                 <h1>Seu Score é de : 2000</h1>
             </div>
         </section>
+
+        <footer>
+            <div class="footer-content">
+                <p>
+                    Coyright &copy; 2021 - Todos os direitos reservados
+                </p>
+                <div class="social-list">
+                    <ul>
+                        <li class="li"><a href=""><i class="lab la-facebook-f"></i></a></li>
+                        <li class="li"><a href=""><i class="lab la-instagram"></i></a></li>
+                        <li class="li"><a href=""><i class="lab la-twitter"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
     </div>
 </body>
 <script src="menu.js"></script>
